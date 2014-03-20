@@ -1,0 +1,52 @@
+---
+title: Home
+---
+
+<section class="title-card">
+    <div class="content text-center">
+        <img class="eye-logo" src="img/one-story-eye-logo.png" width="269" height="154" alt="One Story Productions Logo">
+        <h1>Helping You Find Your Visual-Voice</h1>        
+    </div>
+    <div class="content text-center caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit purus est, vel lobortis diam placerat dignissim. Fusce erat ligula, varius sollicitudin pretium non, ornare sit amet turpis.</p>  
+    </div>
+    <i class="icon icon-arrow-down scroll-indicator"></i>
+</section>
+<div class="main-content">
+    <section class="well space-a">
+        <div class="content">
+            <div class="column column-12">
+                <h1 class="heading-a heading-inline">Case Study</h1>
+                <a href="/projects" class="text">See All &gt;</a>
+            </div>
+            <div class="column column-12 space-c">
+                <div class="slider-container">
+                    <div class="slider">
+                        <ul>
+                          <% blog.articles.select { |a| a.data[:type] == 'case_study' }.each do |entry| %>
+                            <li class="slide">
+                              <%= partial(:case_study_carousel, :locals => {:entry => entry }) %>
+                            </li>
+                          <% end %>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="space-b">
+        <div class="content">
+            <div class="column column-12">
+                <h1 class="heading-b heading-minor">Other Projects</h1>
+            </div>
+            <% blog.articles.select { |a| a.data[:front_page] && a.data[:type] == 'video' }.each do |entry| %>
+              <a href="<%= url_for(entry) %>" class="project-link column column-4 space-c">
+                <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
+              </a>
+            <% end %>
+            <div class="column column-12 text-center space-c">
+                <a href="/projects" class="text">See all projects &gt;</a>
+            </div>
+        </div>
+    </section>        
+</div>

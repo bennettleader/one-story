@@ -1,0 +1,23 @@
+<section>
+    <div class="content">
+        <div class="column column-12 space-a">
+            <h1 class="heading-a heading-major">Projects</h1>
+        </div>
+      
+        <% blog.articles.select { |a| a.data[:type] == 'case_study' }.each do |entry| %>
+          <div class="project-feature column column-4 space-c">
+            <%= partial(:case_study_thumbnail, :locals => {:entry => entry }) %>
+          </div>
+        <% end %>
+
+        <h1 class="heading-b space-a hide-desktop">Videos</h1>
+        
+        <% blog.articles.select { |a| a.data[:type] == 'video' }.each do |entry| %>
+          <a href="<%= url_for(entry) %>" class="project-link column column-4 space-c">
+            <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
+          </a>
+        <% end %>
+      </div>
+</section>
+<%= partial :testimonials %>
+<%= partial :clients %>

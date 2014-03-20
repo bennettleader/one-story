@@ -1,0 +1,8 @@
+<div class="image" style="background-image: url(<%= entry.data.image_url %>)">
+    <img src="<%= entry.data.image_url %>" width="300" height="441" alt="">
+</div>
+<div class="overlay overlay-b">
+    <h2 class="label"><%= entry.data.title %></h2>
+    <p class="description"><%= entry.data.description %></p>
+    <a class="button" href="<%= url_for entry %>">View Case Study</a>
+</div>
