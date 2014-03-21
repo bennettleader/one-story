@@ -24,7 +24,7 @@ $(function(){
         SLIDER
     ***************************************************************************************************/
 
-    $('.slider').unslider({
+    $('.slider.slider-auto').unslider({
         speed: 500,                 //  The speed to animate each slide (in milliseconds)
         delay: 3000,                //  The delay between slide animations (in milliseconds)
         complete: function() {},    //  A function that gets called after every slide animation
@@ -32,11 +32,32 @@ $(function(){
         dots: true,                 //  Display dot navigation
         fluid: true                 //  Support responsive design. May break non-responsive designs
     });
-
-    $('.slider .dots')
+  
+    $('.slider.slider-auto .dots')
         .wrap('<div class="slider-controls">')
         .before('<i class="slider-control prev icon icon-arrow-left">')
         .after('<i class="slider-control next icon icon-arrow-right">');
+  
+    $('.slider:not(.slider-auto)').unslider({
+        speed: 500,                 //  The speed to animate each slide (in milliseconds)
+        delay: false,                //  The delay between slide animations (in milliseconds)
+        complete: function() {},    //  A function that gets called after every slide animation
+        keys: true,                 //  Enable keyboard (left, right) arrow shortcuts
+        dots: false,                 //  Display dot navigation
+        fluid: true                 //  Support responsive design. May break non-responsive designs
+    });
+
+    $('.slider:not(.slider-auto)').each(function(){
+        var data = $(this).data('unslider');
+        var _this = this;
+        $(this).siblings().find('.jump-button').click(function(){
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+          data.move(parseInt($(this).attr('data-index')), function() { });
+        });
+      $(this).siblings().find('.jump-button:first-child').addClass('active');
+    });
+  
 
     $('.slider').each(function(){
         var data = $(this).data('unslider');
@@ -89,9 +110,9 @@ $(function(){
         });
     }
   
-  $(document).ready(function(){
-    // Target your .container, .wrapper, .post, etc.
-    $(".video.content").fitVids();
-  });
+    $(document).ready(function(){
+      // Target your .container, .wrapper, .post, etc.
+      $(".content").fitVids();
+    });
   
 });

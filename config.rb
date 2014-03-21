@@ -7,11 +7,34 @@
 set :partials_dir, "_partials"
 
 activate :blog do |blog|
+  blog.name = "case_studies"
   # This will add a prefix to all links, template references and source paths
 
   blog.permalink = "/case-studies/{title}.html"
   # Matcher for blog source files
-  blog.sources = "entries/:title.html"
+  blog.sources = "entries/case_studies/:title.html"
+  # blog.taglink = "tags/{tag}.html"
+  blog.layout = "case_study"
+  # blog.summary_separator = /(READMORE)/
+  # blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  blog.default_extension = ".markdown"
+
+  # Enable pagination
+   blog.paginate = true
+   blog.per_page = 1
+  # blog.page_link = "page/{num}"
+end
+
+activate :blog do |blog|
+  blog.name = "videos"
+  # This will add a prefix to all links, template references and source paths
+
+  blog.permalink = "/projects/{title}.html"
+  # Matcher for blog source files
+  blog.sources = "entries/videos/:title.html"
   # blog.taglink = "tags/{tag}.html"
   blog.layout = "video"
   # blog.summary_separator = /(READMORE)/
@@ -20,16 +43,13 @@ activate :blog do |blog|
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".markdown"
-
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-  blog.new_article_template = "source/new_entry_template.tt"
   
   # Enable pagination
    blog.paginate = true
    blog.per_page = 1
   # blog.page_link = "page/{num}"
 end
+
 
 ###
 # Compass
@@ -74,12 +94,12 @@ activate :livereload
 activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
+ helpers do
+   def nav_active(page)
+    (current_page.url.split('/')[1] == page ? 'current' : '')
+   end 
+ end
+  
 set :css_dir, 'css'
 
 set :js_dir, 'js'

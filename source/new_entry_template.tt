@@ -1,6 +1,0 @@
----
-title: <%= @title %>
-image_url: /img/project-previews/<%= @title.parameterize %>.png
-date: <%= @date.strftime('%F %R %Z') %>
-type: <%= @type || 'video' %>
----

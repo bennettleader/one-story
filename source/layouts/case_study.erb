@@ -4,7 +4,112 @@
   <body class="<%= page_classes %>">
     <%= partial :header %>
 
-    CASE STUDY
+    <div class="main-content">
+      <div class="content">
+
+        
+        <% if current_page.data['videos'] %>
+         <div class="space-c">
+              <div class="slider-container">
+                  <div class="slider">
+                      <ul>
+                        <% current_page.data['videos'].each do |data| %>
+                          <li class="slide">
+                            <% if data.vimeo_id %>
+                              <%= partial(:vimeo_embed, :locals => {:id => data.vimeo_id }) %>
+                            <% elsif data.youtube_id %>
+                              <%= partial(:youtube_embed, :locals => {:id => data.youtube_id }) %>
+                            <% end %>
+                          </li>
+                        <% end %>
+                      </ul>
+                    <div class="clearfix">&nbsp;</div>
+                  </div>
+                   <ol class='jump-buttons'>
+                    <% current_page.data['videos'].each_with_index do |data, index| %>
+                      <li class='jump-button' data-index=<%= index %> style="width: <%= 100 / current_page.data['videos'].length - 2 %>%">
+                        Part <%= index + 1 %>: <strong><%= data.title %></strong>
+                      </li>
+                    <% end %>
+                  </ol>
+              </div>                
+          </div>
+        <% end %>
+  
+          <h3 class="heading-project-description"><%= current_page.data['description'] %></h3>
+
+          <div class="column column-7 space-b">
+            <%= yield %> 
+          </div>
+          <div class="column column-4 column-right nest-container space-b">
+              <% if current_page.data['stats'] %>
+              <div class="column column-4">
+                  <h2 class="heading-b heading-major">Project Stats</h2>
+                  <div class="clearfix">
+                      <% if current_page.data['stats']['project_duration'] %>
+                      <div class="project-stat space-c">
+                          <i class="icon icon-clock"></i>
+                          <div class="description"><%= current_page.data['stats']['project_duration'] %></div>
+                          <div class="label">Project Duration</div>
+                      </div>
+                      <% end %>
+                      <% if current_page.data['stats']['global_pr_campaign'] %>
+                      <div class="project-stat space-c">
+                          <i class="icon icon-megaphone"></i>
+                          <div class="description"><%= current_page.data['stats']['global_pr_campaign'] %></div>
+                          <div class="label">Global PR Campaign</div>
+                      </div>
+                      <% end %>
+                      <% if current_page.data['stats']['locations'] %>
+                      <div class="project-stat space-c">
+                          <i class="icon icon-earth"></i>
+                          <div class="description"><%= current_page.data['stats']['locations'] %></div>
+                          <div class="label">Locations</div>
+                      </div>
+                      <% end %>
+                      <% if current_page.data['stats']['crew_size'] %>
+                      <div class="project-stat space-c">
+                          <i class="icon icon-user"></i>
+                          <div class="description"><%= current_page.data['stats']['crew_size'] %></div>
+                          <div class="label">Crew Size</div>
+                      </div>
+                      <% end %>
+                      <% if current_page.data['stats']['videos_produced'] %>
+                      <div class="project-stat space-c">
+                          <i class="icon icon-video"></i>
+                          <div class="description"><%= current_page.data['stats']['videos_produced'] %></div>
+                          <div class="label">Videos Produced</div>
+                      </div>
+                      <% end %>
+                  </div>
+              </div>
+              <% end %>
+            <% if current_page.data['images'] %>
+             <div class="column column-4">
+                <h2 class="heading-b heading-major space-b">Photos</h2>
+              </div>
+              <% current_page.data['images'].each do |url| %>
+                <div class="column column-2 space-c image-grid image-space">
+                    <img class="full-width" src="<%= url %>" width="140" height="100" alt="">
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+      </div>
+      <div class="well">
+          <div class="content">
+              <div class="column column-12">
+                  <h2 class="heading-b heading-minor">More Videos</h2>
+              </div>
+
+              <% blog('videos').articles.select { |a| a.data[:front_page] }.each do |entry| %>
+                <a href="<%= url_for(entry) %>" class="video-link column column-4 space-c">
+                  <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
+                </a>
+              <% end %>
+          </div>
+      </div>
+    </div>
     
     <%= partial :footer %>
   </body>

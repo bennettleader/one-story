@@ -460,6 +460,59 @@ img.full-width {
     border-radius: 6px;
     margin: 0 4px;
 }
+.slider + .jump-buttons {
+    margin-top:-30px;
+}
+
+ol.jump-buttons {
+  box-sizing:border-box;
+  width:100%;
+  height:40px;
+  margin:0;
+  text-align:center;
+}
+
+li.jump-button.active {
+  background-color:#000;
+  color:#FFF;
+}
+
+li.jump-button {
+  cursor: pointer;
+  box-sizing:border-box;
+  list-style-type:none;
+  font-size:1.2em;
+  line-height: 1.4em;
+  padding:0.8em;
+  display:inline-block;
+  background-color: #CCC;
+  box-shadow:0 0 1px #333;
+  text-transform: uppercase;
+  text-align:center;
+}
+.jump-button + .jump-button {
+  margin-left:10px; 
+}
+
+.jump-button.active:before {
+  display:block;
+  position:absolute;
+  content:"";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 15px 15px 15px;
+  border-color: transparent transparent #000000 transparent;
+  top: -10px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.jump-button strong {
+  font-size:1.2em;
+  line-height:1.2em;
+  font-weight:bold;
+}
 
 /*************************************************
     WELL
@@ -552,12 +605,19 @@ img.full-width {
   bottom: 150px;
 }
 
-.video .content {
-  margin-top:10px;
-}
-  
 .video .content h1 {
   font-size:3em; 
+}
+
+h3.heading-project-description {
+  text-transform:none!important;
+  font-size:1.8em;
+  color:#333;
+  line-height:1.3em;
+  font-weight:100!important;
+  width:70%;
+  margin: 2em auto;
+  text-align:center;
 }
 
 
@@ -1073,7 +1133,6 @@ textarea:focus {
       min-height:240px;
       height:auto;
     }
-
   
     /* TITLE CARD */
 
@@ -1117,6 +1176,18 @@ textarea:focus {
     .slider-control {
         display: none;
     }
+  
+    .slider .slide {
+      float:none;
+    }
+    .slider .slide + .slide {
+      margin-top: 10px;  
+    }
+
+    .slider {
+      height:auto!important;
+    }
+  
 
     /* TESTIMONIAL */
 

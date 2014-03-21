@@ -21,9 +21,9 @@ title: Home
             </div>
             <div class="column column-12 space-c">
                 <div class="slider-container">
-                    <div class="slider">
+                    <div class="slider slider-show">
                         <ul>
-                          <% blog.articles.select { |a| a.data[:type] == 'case_study' }.each do |entry| %>
+                          <% blog('case_studies').articles.each do |entry| %>
                             <li class="slide">
                               <%= partial(:case_study_carousel, :locals => {:entry => entry }) %>
                             </li>
@@ -39,7 +39,7 @@ title: Home
             <div class="column column-12">
                 <h1 class="heading-b heading-minor">Other Projects</h1>
             </div>
-            <% blog.articles.select { |a| a.data[:front_page] && a.data[:type] == 'video' }.each do |entry| %>
+            <% blog('videos').articles.select { |a| a.data[:front_page] }.each do |entry| %>
               <a href="<%= url_for(entry) %>" class="project-link column column-4 space-c">
                 <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
               </a>
