@@ -99,7 +99,9 @@ activate :directory_indexes
     (current_page.url.split('/')[1] == page ? 'current' : '')
    end 
  end
-  
+
+set :build_dir, 'tmp'
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'
