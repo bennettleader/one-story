@@ -1,5 +1,6 @@
 ---
 title: Explore Austin
+logo: /img/client-thumbnails/explore_austin.png
 description: We’ve been working with Explore Austin since 2007 to help them connect with their supporters. We are able to tag along on their summer wilderness Trips.
 date: 2012-01-01
 image_url: img/case-study-previews/explore-austin.png
