@@ -4,17 +4,61 @@ description: We’ve been working with Explore Austin since 2007 to help them co
 date: 2012-01-01
 image_url: img/case-study-previews/explore-austin.png
 carousel_image_url: img/slider-case-studies/explore-austin.jpg
+images: 
+  - http://farm8.staticflickr.com/7034/6505694697_ebe6536f8d_b.jpg
+  - /img/case-studies/unesco/photo-1.png
+  - /img/case-studies/unesco/photo-1.png
+  - /img/case-studies/unesco/photo-1.png
+  
 videos:
   - 
     title: Character For Life
     youtube_id: HWSazQvniYE  
   - 
-    title: Connecting the Dots at Explore Austin
+    title: Connecting the Dots
     youtube_id: rFgvLkpHOoM  
   -
     title: Leave the Roads. Take the Trails. Change a Life.
     youtube_id: IrBLBNbXEA4
     
+stats:
+    project_duration: 7 Years
+    locations: 4
+    crew_size: 1
+    videos_produced: 10
 ---
 
-This is an example article. You probably want to delete it and write your own articles!
+<h2 class="heading-b heading-major">Background</h2>
+<p>Aaron has travelled to Colorado, Washington and Missouri to capture the programs that Explore Austin offers. 
+</p>
+
+<p></p>
+
+<p><strong>PROJECTS</strong></p>
+<ul class="services_provided">
+    <li>Character for Life</li>
+    <li>Connecting the Dots at Explore Austin</li>
+    <li>Leave the Roads. Take the Trails. Change a Life.</li>
+    <li>Make the Journey Possible</li>
+    <li>Summer Wilderness Trips 2011</li>
+    <li>Thank You to Our Sponsor, Backwoods</li>
+    <li>Explore Austin Greenlights Award</li>
+    <li>Thank You, RECA!</li>
+    <li>2010: Summer Wilderness Trips</li>
+    <li>Happy Holidays from Explore Austin</li>
+</ul>
+
+<p><strong>SERVICES PROVIDED</strong></p>
+<ul class="services_provided">
+    <li>Writing</li>
+    <li>Consulting</li>
+    <li>Production</li>
+    <li>Post-Production</li>
+    <li>Animation/Motion-Graphics</li>
+</ul>
+
+<p></p>
+<h2 class="heading-b heading-major">Outcome</h2>
+<p>"Aaron has done an incredible job of capturing our “story” at ExploreAustin. He immerses himself in the culture and vision of the organization. By doing so... One Story Productions has given us a voice. Aaron is a true storyteller with a camera."</p>
+
+<p>— Jamie Matthews • Explore Austin</p>

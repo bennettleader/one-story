@@ -8,7 +8,7 @@ title: Home
         <h1>Helping You Find Your Visual-Voice</h1>        
     </div>
     <div class="content text-center caption">
-        <p></p>  
+        <p>Partnering with non-profits and businesses to tell the story behind their missions.</p>  
     </div>
     <i class="icon icon-arrow-down scroll-indicator"></i>
 </section>
@@ -17,7 +17,7 @@ title: Home
         <div class="content">
             <div class="column column-12">
                 <h1 class="heading-a heading-inline">Case Study</h1>
-                <a href="/projects" class="text">See All &gt;</a>
+                <a href="/projects" class="text">See All &rsaquo;</a>
             </div>
             <div class="column column-12 space-c">
                 <div class="slider-container">
@@ -37,7 +37,7 @@ title: Home
     <section class="space-b">
         <div class="content">
             <div class="column column-12">
-                <h1 class="heading-b heading-minor">Other Projects</h1>
+                <h1 class="heading-b heading-minor">Recent Projects</h1>
             </div>
             <% blog('videos').articles.select { |a| a.data[:front_page] }.each do |entry| %>
               <a href="<%= url_for(entry) %>" class="project-link column column-4 space-c">
@@ -45,7 +45,7 @@ title: Home
               </a>
             <% end %>
             <div class="column column-12 text-center space-c">
-                <a href="/projects" class="text">See all projects &gt;</a>
+                <a href="/projects" class="text">See all projects &rsaquo;</a>
             </div>
         </div>
     </section>        

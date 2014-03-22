@@ -171,10 +171,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-minor {
     color: #666;
+    font-weight: 300;
+    letter-spacing: .5px;
 }
 
 .heading-a {
-    font-size: 2.4em;
+    font-size: 2.2em;
+    letter-spacing: .1em;
 }
 
 .heading-b {
@@ -195,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .space-c {
-    margin-top: 2em !important;
+    margin-top: 4em !important;
 }
 
 hr {
@@ -271,7 +274,7 @@ img.full-width {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, .65);
+    background: rgba(0, 0, 0, .85);
     font-weight: 300;
     color: #fff;
 }
@@ -308,7 +311,8 @@ img.full-width {
 
 .overlay-a .label {
     font-size: 2.8em;
-    font-weight: 600;
+    font-weight: 300;
+    line-height: 1.25em;
 }
 
 .overlay-a .description {
@@ -335,9 +339,10 @@ img.full-width {
 }
 
 .overlay-c .label {
-    font-weight: 300;
+    font-weight: 600;
     color: #999;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .overlay-c .description {
@@ -376,6 +381,9 @@ img.full-width {
     width: 5em;
     height: 5em;
     margin-right: 2em;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    overflow: hidden;
 }
 
 .testimonial .name {
@@ -388,6 +396,7 @@ img.full-width {
     right: 0;
     top: 0;
     width: auto;
+    height: 70px;
 }
 
 .testimonial-container {
@@ -605,18 +614,26 @@ li.jump-button {
   bottom: 150px;
 }
 
-.video .content h1 {
-  font-size:3em; 
+.video .main-content {
+    padding-top: 60px;
+}
+
+.video .content h2 {
+  font-size:2em; 
+  font-weight: 300;
+  border-bottom: 2px solid #e1e1e1;
+  margin-bottom: 30px;
+  padding-bottom: 1em;
 }
 
 h3.heading-project-description {
   text-transform:none!important;
-  font-size:1.8em;
+  font-size: 2.2em;
   color:#333;
-  line-height:1.3em;
+  line-height:1.5em;
   font-weight:100!important;
-  width:70%;
-  margin: 2em auto;
+  width:80%;
+  margin: 3.3em auto 1em;
   text-align:center;
 }
 
@@ -721,6 +738,28 @@ h3.heading-project-description {
     float: left;
     margin-right: 1em;
     padding: .5em 0;
+}
+
+/*************************************************
+    CASE STUDIES
+*************************************************/
+
+.case-studies h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.case-studies .services_provided {
+    padding: 0 0 0 2.2em;
+    
+}
+
+.case-studies .services_provided li {
+    list-style-type: square;
+    font-size: 1.2em;
+    margin: .2em 0;
+    color: #808080;
 }
 
 /*************************************************

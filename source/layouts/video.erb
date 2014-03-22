@@ -5,9 +5,9 @@
     <%= partial :header %>
     <section class="main-content content">
       <div class="content">
+         <h2><%= current_page.data.title %></h2>
          <iframe src="//player.vimeo.com/video/<%= current_page.data.vimeo_id %>?title=0&amp;byline=0&amp;portrait=0&amp;color=FFF" width="960px" height="540px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      <h1><%= current_page.data.title %></h1>
     </section>
     <%= partial :footer %>
   </body>
