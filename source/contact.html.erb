@@ -11,18 +11,33 @@ title: Contact
             <div class="content">
                 <div class="column column-7 space-c">
                     <h2 class="heading-b heading-minor">Drop us a line:</h2>
-                    <form>
-                        <div class="input-container space-c">
-                            <input class="text" type="text" placeholder="Name">
-                        </div>
-                        <div class="input-container space-c">
-                            <input class="text" type="text" placeholder="you@email.com">
-                        </div>
-                        <div class="input-container space-c">
-                            <textarea class="text" placeholder="What can we help you with?" rows="5"></textarea>
-                        </div>
-                        <a class="button" href="#">SEND MESSAGE</a>
-                    </form>
+                    
+            <div id="form">
+				<form id="ajax-contact-form" action="javascript:alert('success!');">
+					<fieldset class="info_fieldset">
+						<div id="note"></div>
+						<div id="fields">
+							
+                            <div class="input-container space-c">
+                                <input class="text" type="text" name="name" value="" placeholder="Name" />
+							</div>
+                            
+                            <div class="input-container space-c">
+                                <input class="text" type="text" name="email" value="" placeholder="you@email.com" />
+                            </div>
+							
+                            <input class="textbox" type="text" name="subject" value="New message from Slate-Systems.com" placeholder="New message from Slate-Systems.com" style="display: none;" />
+
+							<div class="input-container space-c">
+                                <textarea class="text" name="message" rows="5" cols="25" placeholder="What can we help you with?"></textarea>
+                            </div>
+                            
+							<input class="button" type="submit" value="Send Message" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+                    
                 </div>
                 <div class="column column-4 column-right space-b">
                     <div class="testimonial-container">

@@ -43,12 +43,6 @@ stats:
     <li>Post-Production</li>
     <li>Animation/Motion-Graphics</li>
 </ul>
-
-<p>&nbsp;</p>
-<div class="text text-center location">
-    <img class="full-width" src="../img/case-studies/unesco/locations.png" width="961" height="226" alt="">
-    PRODUCTION LOCATIONS
-</div>
 <p>&nbsp;</p>
 <h2 class="heading-b heading-major">Outcome</h2>
 <p>"Aaron was a true professional throughout the process and captured the spirit of each project. The films helped our efforts by…</p>

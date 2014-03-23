@@ -7,9 +7,9 @@ image_url: img/case-study-previews/explore-austin.png
 carousel_image_url: img/slider-case-studies/explore-austin.jpg
 images: 
   - http://farm8.staticflickr.com/7034/6505694697_ebe6536f8d_b.jpg
-  - /img/case-studies/unesco/photo-1.png
-  - /img/case-studies/unesco/photo-1.png
-  - /img/case-studies/unesco/photo-1.png
+  - https://farm8.staticflickr.com/7020/6505692455_449ffd4b35_b.jpg
+  - https://farm8.staticflickr.com/7029/6505707717_71732cc576_b.jpg
+  - https://farm8.staticflickr.com/7167/6505710555_eda60cdc9c_b.jpg
   
 videos:
   - 

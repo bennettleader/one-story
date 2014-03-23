@@ -348,6 +348,11 @@ img.full-width {
     padding: 1em;
 }
 
+.overlay-c .video-preview-header {
+    position: absolute;
+    bottom:0;
+    padding-bottom: 8px;
+}
 .overlay-c .label {
     font-weight: 600;
     color: #999;
@@ -695,6 +700,14 @@ h3.heading-project-description {
     height: auto;
 }
 
+.more-image-preview {
+    height: 100px;
+    overflow: hidden;
+}
+
+.more-image-preview img {
+    margin-top: -50px;
+}
 /*************************************************
     TITLE CARD
 *************************************************/
@@ -1028,6 +1041,7 @@ textarea:focus {
     font-size: 1.1em;
     text-transform: uppercase;
     color: #666;
+    float: right;
 }
 
 .social-nav {
@@ -1037,6 +1051,22 @@ textarea:focus {
 .footer .icon {
     font-size: 2.4em;
 }
+
+/*************************************************
+    CONTACT FORM
+*************************************************/
+#contact_form_holder {  font-size: 11px; width:400px; padding:0px; margin:0px; }
+#cf_submit_p { text-align:right; }
+.error { display:none; padding:5px; color:#D8000C; font-size:12px; background-color:#FFBABA; border:solid 1px #e06d6d; }
+.success { display:none; padding:5px; color:#044406; font-size:12px; background-color:#B7FBB9; border:solid 1px #65d668; }
+#contact_logo { vertical-align:middle; }
+.error img { vertical-align:top; }
+.contact_name, .contact_email, .contact_subject, .contact_message { font-size:14px; width:388px; max-width:388px; background:none; border:solid 1px #ccc; padding:5px; margin:5px 0px; border-radius: 3px; background-color: #f9f9f9; }
+#topic { width:100%; font-size:12px; background:none; border:solid 1px #505050; padding:5px; margin:5px 0px; }
+.contact_message { height:100px; }
+select, input, textarea { outline:none; background:none; border:solid 1px #ccc; }
+select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-box-shadow:#2080ad 0px 0px 5px; }
+
 
 /***************************************************************************************************
     RESPONSIVE

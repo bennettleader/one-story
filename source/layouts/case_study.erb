@@ -114,7 +114,7 @@
 
               <% blog('videos').articles.select { |a| a.data[:front_page] }.each do |entry| %>
                 <a href="<%= url_for(entry) %>" class="video-link column column-4 space-c">
-                  <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
+                  <%= partial(:video_thumbnail_footer, :locals => {:entry => entry }) %>
                 </a>
               <% end %>
           </div>
