@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-a {
     font-size: 2.2em;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
 }
 
 .heading-b {
@@ -190,6 +190,15 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
 }
 
+.heading-minor-inline {
+    color: #666;
+    font-weight: 300;
+    letter-spacing: .5px;
+    display: inline;
+    margin-right: 1em;
+}
+
+
 .space-a {
     margin-top: 6em !important;
 }
@@ -199,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .space-c {
-    margin-top: 4em !important;
+    margin-top: 2.5em !important;
 }
 
 hr {
@@ -416,6 +425,7 @@ img.full-width {
 
 .slider {
     padding-bottom: 40px;
+    height: auto !important;
 }
 
 .slider ul {
@@ -472,6 +482,13 @@ img.full-width {
 }
 .slider + .jump-buttons {
     margin-top:-30px;
+}
+
+.slider-container {
+ }
+
+.slider.slider-show {
+    height: 1000px;
 }
 
 ol.jump-buttons {
@@ -531,7 +548,7 @@ li.jump-button {
 .well {
     margin-top: 6em;
     overflow: hidden;
-    padding: 2em 0;
+    padding: 3em 0 2em;
     background: #e1e1e1;
 }
 
@@ -745,15 +762,49 @@ h3.heading-project-description {
     CASE STUDIES
 *************************************************/
 
-.case-studies h1 {
-    font-size: 2em;
+.case-study-header { 
     text-align: center;
+    width: 100%;
+    padding: 1.5em 0;
+    margin-bottom: -3em;
+}
+
+.current-case-study {
+    display: inline-block;
+}
+
+.current-case-study h1 {
+    font-size: 2em;
     font-weight: 300;
+    padding: 1em .5em;
+    float: left;
+}
+
+.current-case-study .logo {
+    float: left;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.prev-case-study {
+    float: left;
+    padding: 2.1em 0 0;
+    font-size: 1.2em;
+}
+
+.next-case-study {
+    float: right;
+    padding: 2.1em 0 0;
+    font-size: 1.2em;
 }
 
 .case-studies .services_provided {
     padding: 0 0 0 2.2em;
-    
 }
 
 .case-studies .services_provided li {

@@ -424,6 +424,7 @@ img.full-width {
 
 .slider {
     padding-bottom: 40px;
+    height: auto !important;
 }
 
 .slider ul {
@@ -483,8 +484,11 @@ img.full-width {
 }
 
 .slider-container {
-    
  }
+
+.slider.slider-show {
+    height: 1000px;
+}
 
 ol.jump-buttons {
   box-sizing:border-box;
