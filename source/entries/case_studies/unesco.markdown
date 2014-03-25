@@ -1,6 +1,8 @@
 ---
 title: UNESCO International Fund for Cultural Diversity
 logo: /img/client-thumbnails/unesco.png
+next: /case-studies/explore-austin/
+prev: /case-studies/active-life/
 description: This inspiring, large-scale, project took our cause-focused documentary work global. Producing films shot in Senegal, Argentina, and Croatia.
 date: 2014-01-01
 image_url: img/case-study-previews/unesco.png

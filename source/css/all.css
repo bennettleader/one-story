@@ -1063,7 +1063,7 @@ textarea:focus {
 .contact_name, .contact_email, .contact_subject, .contact_message { font-size:14px; width:388px; max-width:388px; background:none; border:solid 1px #ccc; padding:5px; margin:5px 0px; border-radius: 3px; background-color: #f9f9f9; }
 #topic { width:100%; font-size:12px; background:none; border:solid 1px #505050; padding:5px; margin:5px 0px; }
 .contact_message { height:100px; }
-select, input, textarea { outline:none; background:none; border:solid 1px #ccc; }
+select, input, textarea { outline:none; background:none; border:0; }
 select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-box-shadow:#2080ad 0px 0px 5px; }
 
 
@@ -1105,15 +1105,15 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     }
 
     .text {
-        font-size: 2.4em;
+        font-size: 2.8em;
     }
 
     .heading-a {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .heading-b {
-        font-size: 2.4em;
+        font-size: 3.4em;
     }
 
     .space-c {
@@ -1197,6 +1197,8 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
 
     .footer .icon {
         font-size: 10em;
+        margin: .1em .3em 0;
+        display: inline-block;
     }
 
     /* GRID */
@@ -1239,7 +1241,7 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
 
     .project-stat .icon {
         padding: 0;
-        margin-right: .25em;
+        margin: .5em .5em 0 0;
         font-size: 4em;
     }
 
@@ -1253,8 +1255,67 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
       background-size: 100% auto;
       background-repeat:no-repeat;
       background-position: auto auto;
-      min-height:240px;
+      min-height:auto;
       height:auto;
+    }
+    
+    .project-feature .button {
+      position: relative;
+      border-radius: 3px;
+      padding: .66em;
+      bottom: auto;
+    }
+    
+    .project-feature .overlay {
+      position: inherit;
+    }
+    
+    .current-case-study {
+    width: 50%;
+    }
+    
+    .current-case-study .logo {
+      float: inherit;
+    }
+    
+    .current-case-study h1 {
+      float: inherit;
+      font-size: 3em;
+      font-weight: 600;
+      padding: 0;
+    }
+    
+    .prev-case-study {
+      padding: 2.1em 0 0;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    
+    .next-case-study {
+      padding: 2.1em 0 0;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    /* CASE STUDIES */
+    
+    h3.heading-project-description {
+        font-size:4em;
+    }
+    
+    .case-studies .services_provided {
+        padding: 0 0 0 4em;
+    }
+    
+    .case-studies .services_provided li {
+        font-size: 2.4em;
+    }
+    
+    .project-stat .description {
+        font-size: 3.2em;
+    }
+    
+    .project-stat .label {
+        font-size: 2.2em;
     }
   
     /* TITLE CARD */
@@ -1324,8 +1385,8 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     }
 
     .testimonial p {
-        line-height: 1.4em;
-        font-size: 2.1em;
+        line-height: 1.6em;
+        font-size: 2.6em;
     }
 
     .testimonial .text {
@@ -1335,11 +1396,16 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
 
     .testimonial .name {
         padding-top: 0;
+        font-size: 2.8em;
     }
 
     .testimonial .avatar {
         width: 6em;
         height: 6em;
+    }
+    
+    .text.role {
+        font-size: 2.2em;
     }
 
     /* WELL */
