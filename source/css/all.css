@@ -1363,10 +1363,11 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     }
   
     .slider .slide {
-      float: left;
+      float: none;
+      display: block;
     }
     .slider .slide + .slide {
-      /*margin-top: 10px;*/
+      margin-top: 10px;
     }
 
     .slider {
