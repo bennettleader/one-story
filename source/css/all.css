@@ -779,6 +779,7 @@ h3.heading-project-description {
     width: 100%;
     padding: 1.5em 0;
     margin-bottom: -3em;
+    position:relative
 }
 
 .current-case-study {
@@ -804,13 +805,15 @@ h3.heading-project-description {
 }
 
 .prev-case-study {
-    float: left;
+    position: absolute;
+    left:0;
     padding: 2.1em 0 0;
     font-size: 1.2em;
 }
 
 .next-case-study {
-    float: right;
+    position: absolute;
+    right:0;
     padding: 2.1em 0 0;
     font-size: 1.2em;
 }
