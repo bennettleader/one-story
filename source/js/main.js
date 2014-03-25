@@ -1,4 +1,9 @@
 $(function(){
+  
+    // Target your .container, .wrapper, .post, etc.
+    $(".slide").fitVids();
+  
+  
     /***************************************************************************************************
         NAV
     ***************************************************************************************************/
@@ -53,6 +58,7 @@ $(function(){
         $(this).siblings().find('.jump-button').click(function(){
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
+          $(document).trigger("pause:video", {index: $(this).attr('data-index'), el: data.items[data.current]});
           data.move(parseInt($(this).attr('data-index')), function() { });
         });
       $(this).siblings().find('.jump-button:first-child').addClass('active');
@@ -71,6 +77,19 @@ $(function(){
         });
     });
 
+    $(document).on("pause:video", function(event, data) {
+
+      var iframe = $(data.el).find('iframe');
+      
+      if (iframe.attr('src').match('vimeo')) {
+        var url = iframe.attr('src').split('?')[0];
+        iframe[0].contentWindow.postMessage(JSON.stringify({method: 'pause', value: 1}), url);
+      }
+      else if (iframe.attr('src').match('youtube')) {
+        callPlayer(iframe.attr('id'), "pauseVideo");
+      }
+    })
+  
     /***************************************************************************************************
         RESPONSIVE IMAGES
     ***************************************************************************************************/
@@ -109,10 +128,4 @@ $(function(){
             }
         });
     }
-  
-    $(document).ready(function(){
-      // Target your .container, .wrapper, .post, etc.
-      $(".content").fitVids();
-    });
-  
 });

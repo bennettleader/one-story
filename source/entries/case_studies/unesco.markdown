@@ -14,7 +14,7 @@ images:
   - http://farm6.staticflickr.com/5509/10694202114_e4ff4b9982_c.jpg
   - http://farm8.staticflickr.com/7409/10694138484_4ceae4b5d1_c.jpg
   - http://farm8.staticflickr.com/7382/8717939791_339b06b9bd_c.jpg
-  
+show_video_part_labels: true
 videos:
   - 
     title: IFCD Corporate Film

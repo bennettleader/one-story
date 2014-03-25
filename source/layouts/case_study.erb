@@ -35,7 +35,7 @@
                    <ol class='jump-buttons  hide-mobile'>
                     <% current_page.data['videos'].each_with_index do |data, index| %>
                       <li class='jump-button' data-index=<%= index %> style="width: <%= 100 / current_page.data['videos'].length - 2 %>%">
-                        Part <%= index + 1 %>: <strong><%= data.title %></strong>
+                        <% if (current_page.data.show_video_part_labels) %>Part <%= index + 1 %>: <% end %><strong><%= data.title %></strong>
                       </li>
                     <% end %>
                   </ol>

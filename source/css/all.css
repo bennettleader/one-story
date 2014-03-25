@@ -501,6 +501,8 @@ ol.jump-buttons {
   height:40px;
   margin:0;
   text-align:center;
+  display:table;
+  border-spacing:10px;
 }
 
 li.jump-button.active {
@@ -509,17 +511,19 @@ li.jump-button.active {
 }
 
 li.jump-button {
+  vertical-align:top;
   cursor: pointer;
   box-sizing:border-box;
   list-style-type:none;
   font-size:1.2em;
   line-height: 1.4em;
   padding:0.8em;
-  display:inline-block;
   background-color: #CCC;
   box-shadow:0 0 1px #333;
   text-transform: uppercase;
   text-align:center;
+  display:table-cell;
+  vertical-align:middle;
 }
 .jump-button + .jump-button {
   margin-left:10px; 
@@ -541,7 +545,7 @@ li.jump-button {
 
 .jump-button strong {
   font-size:1.2em;
-  line-height:1.2em;
+  line-height:1.1em;
   font-weight:bold;
 }
 
