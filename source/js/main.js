@@ -3,6 +3,9 @@ $(function(){
     // Target your .container, .wrapper, .post, etc.
     $(".slide, .video").fitVids();
   
+    $(".title-card").on('click', function() {
+      $(window).scrollTo($(".main-content"), 300)
+    })
   
     /***************************************************************************************************
         NAV
