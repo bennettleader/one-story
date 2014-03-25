@@ -3,19 +3,17 @@
   <%= partial :head %>
   <body class="<%= page_classes %>">
     <%= partial :header %>
-
     <div class="main-content">
-      <div class="content">
-        
+      <div class="content">        
         <div class="case-study-header">
-            <span class="prev-case-study"><a href="<%= current_page.data.prev %>">&lsaquo; Previous Case Study</a></span>
+            <span class="prev-case-study"><a href="<%= url_for(previous_case_study) %>">&lsaquo; Previous Case Study</a></span>
             <span class="current-case-study">
                 <% if current_page.data['logo'] %>
                     <img class="logo" src="<%= current_page.data.logo %>" alt="<%= current_page.data.title %>">
                 <% end %>
                 <h1><%= current_page.data.title %></h1>
             </span>
-            <span class="next-case-study"><a href="<%= current_page.data.next %>">Next Case Study &rsaquo;</a></span>
+            <span class="next-case-study"><a href="<%= url_for(next_case_study) %>">Next Case Study &rsaquo;</a></span>
         </div>
           
         <% if current_page.data['videos'] %>

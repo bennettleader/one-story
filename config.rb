@@ -97,7 +97,32 @@ activate :directory_indexes
  helpers do
    def nav_active(page)
     (current_page.url.split('/')[1] == page ? 'current' : '')
-   end 
+   end
+   
+   def next_case_study
+     articles =  blog('case_studies').articles
+     index = articles.find_index(current_page)
+     
+     if (articles.count - 1 == index)
+       articles.first
+     else
+       articles[index + 1]
+     end
+   end
+   
+   def previous_case_study
+     articles =  blog('case_studies').articles
+     index = articles.find_index(current_page)
+     
+     if (index == 0)
+       articles.last
+     else
+       articles[index - 1]
+     end
+   end
+   
+   
+   
  end
 
 set :build_dir, 'tmp'
