@@ -786,6 +786,12 @@ h3.heading-project-description {
     position:relative
 }
 
+
+.case-study-video-title {
+  font-size:2.4em;
+  margin-bottom:5px;
+}
+
 .current-case-study {
     display: inline-block;
 }
@@ -1367,6 +1373,11 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
 
     .slider-control {
         display: none;
+    }
+  
+    .slider > ul {
+      left: 0!important;
+      height: auto!important;
     }
   
     .slider .slide {

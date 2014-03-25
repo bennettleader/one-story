@@ -1,7 +1,7 @@
 $(function(){
   
     // Target your .container, .wrapper, .post, etc.
-    $(".slide").fitVids();
+    $(".slide, .video").fitVids();
   
   
     /***************************************************************************************************

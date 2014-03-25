@@ -23,6 +23,8 @@
                       <ul>
                         <% current_page.data['videos'].each do |data| %>
                           <li class="slide">
+                            <h2 class='case-study-video-title hide-desktop'><%= data.title %></h2>
+
                             <% if data.vimeo_id %>
                               <%= partial(:vimeo_embed, :locals => {:id => data.vimeo_id }) %>
                             <% elsif data.youtube_id %>
