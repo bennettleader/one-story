@@ -375,6 +375,10 @@ img.full-width {
     font-size: 1.5em;
 }
 
+.overlay h2 {
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+
 /*************************************************
     TEAM
 *************************************************/
@@ -871,6 +875,22 @@ h3.heading-project-description {
     color: rgba(255,255,255,.66);
 }
 
+.case-study-list-image {
+    position: relative;
+    width: 940px;
+    height: 375px;
+    text-align: center;
+}
+
+.case-study-list-image img {
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    height: 100%;   
+}
+
 /*************************************************
     CONTACT PAGE
 *************************************************/
@@ -1345,6 +1365,14 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
       bottom: auto;
     }
     
+    .case-study-list .button {
+      position: absolute;
+      border-radius: 3px;
+      padding: .66em;
+      bottom: 1.6em;
+      width: 82%;
+    }
+    
     .project-feature .overlay {
       position: inherit;
     }
@@ -1395,6 +1423,32 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     
     .project-stat .label {
         font-size: 2.2em;
+    }
+    
+    .case-study-list {
+        height: 34em;
+    }
+    
+    .case-study-list {
+        padding: 3em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .case-study-list-image {
+        position: relative;
+        height: 60em;
+        width: 370px;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .case-study-list-image img {
+        left: -50%;
+    }
+    
+    .overlay .case-study-list {
+        
     }
   
     /* TITLE CARD */
@@ -1558,7 +1612,7 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
       right: 10px;
       bottom: 10px;*/
       border-radius:3px;
-      font-size: 3em;
+      
       display: block;
     }
 }
