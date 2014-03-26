@@ -1,0 +1,14 @@
+<section>
+    <div class="content">
+        <div class="column column-12 space-a">
+            <h1 class="heading-a heading-major">Case Studies</h1>
+        </div>
+      
+        <% blog('case_studies').articles.each do |entry| %>
+          <div class="column column-12 space-c">
+            <%= partial(:case_study_list, :locals => {:entry => entry }) %>
+          </div>
+        <% end %>
+
+      </div>
+</section>

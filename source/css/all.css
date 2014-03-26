@@ -154,6 +154,10 @@ a {
     color: #2080ad;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
     font-weight: 600;
@@ -273,6 +277,13 @@ img.full-width {
     color: #4f4f4f;
 }
 
+.button:hover {
+    background: #ececec;
+    text-decoration: none;
+    -webkit-box-shadow: 0 1px 1px 0px black;
+    -moz-box-shadow: 0 1px 1px 0px black;
+    box-shadow: 0 1px 1px 0px black;
+}
 /*************************************************
     OVERLAYS
 *************************************************/
@@ -840,6 +851,44 @@ h3.heading-project-description {
     color: #808080;
 }
 
+.overlay.case-study-list {
+    background: rgba(0,0,0,.66);
+}
+
+.case-study-list {
+    padding: 3em 40em 3em 3em;
+    height: 31.5em;
+}
+
+.case-study-list h2 {
+    font-size: 3em;
+}
+
+.case-study-list h3 {
+    padding-top: 2em;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: rgba(255,255,255,.66);
+}
+
+/*************************************************
+    CONTACT PAGE
+*************************************************/
+
+.column.column-7.space-c.contact h2 {
+    font-size: 1.4em;
+    padding: .5em 0;
+    line-height: 1.5em;
+}
+
+.column.column-7.space-c.contact h2 a, .column.column-7.space-c.contact h2 span {
+    font-size: 1.4em;
+    font-weight: 100;
+    margin-top:1em;
+}
+
+
+
 /*************************************************
     FORM
 *************************************************/
@@ -987,12 +1036,18 @@ textarea:focus {
     float: left;
 }
 
+.header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 .header .main-nav a {
     margin: 0 0 0 3em;
 }
 
 .header .current {
     color: #fff;
+    font-weight: 400;
 }
 
 .header .current:after {
@@ -1117,6 +1172,12 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     p {
         font-size: 2.4em;
     }
+    
+    p.large {
+        margin-top: 1.5em;
+        font-size: 3.2em;
+        line-height: 1.5em;
+    }
 
     .text {
         font-size: 2.8em;
@@ -1145,6 +1206,10 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
         width: 16em;
         height: 6em;
         float: none;
+    }
+    
+    .header a {
+        margin-top: 1em;
     }
 
     .nav-cover {

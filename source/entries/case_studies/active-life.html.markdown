@@ -2,6 +2,7 @@
 title: Active Life
 logo: /img/client-thumbnails/active-life.png
 description: We have worked with ACTIVE Life and IT’S TIME TEXAS since 2010. ACTIVE Life is a social change nonprofit working to organize and accelerate the movement to make healthy the norm.
+location: Austin, Texas
 date: 2012-01-01
 image_url: img/case-study-previews/active-life.png
 carousel_image_url: img/slider-case-studies/active-life.jpg

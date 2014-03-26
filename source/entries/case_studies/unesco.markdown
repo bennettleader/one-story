@@ -3,6 +3,7 @@ title: UNESCO International Fund for Cultural Diversity
 logo: /img/client-thumbnails/unesco.png
 description: This inspiring, large-scale, project took our cause-focused documentary work global. Producing films shot in Senegal, Argentina, and Croatia.
 date: 2014-01-01
+location: Paris, France
 image_url: img/case-study-previews/unesco.png
 carousel_image_url: img/slider-case-studies/unesco.jpg
 images: 
