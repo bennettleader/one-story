@@ -736,7 +736,7 @@ h3.heading-project-description {
     margin-top: -5em;
     background: url(../img/title-card.jpg) 40% 50%;
     background-size: cover;
-    height: 100%;
+    height: 99%;
     cursor:pointer;
 }
 
@@ -1141,21 +1141,6 @@ textarea:focus {
     font-size: 2.4em;
 }
 
-/*************************************************
-    CONTACT FORM
-*************************************************/
-#contact_form_holder {  font-size: 11px; width:400px; padding:0px; margin:0px; }
-#cf_submit_p { text-align:right; }
-.error { display:none; padding:5px; color:#D8000C; font-size:12px; background-color:#FFBABA; border:solid 1px #e06d6d; }
-.success { display:none; padding:5px; color:#044406; font-size:12px; background-color:#B7FBB9; border:solid 1px #65d668; }
-#contact_logo { vertical-align:middle; }
-.error img { vertical-align:top; }
-.contact_name, .contact_email, .contact_subject, .contact_message { font-size:14px; width:388px; max-width:388px; background:none; border:solid 1px #ccc; padding:5px; margin:5px 0px; border-radius: 3px; background-color: #f9f9f9; }
-#topic { width:100%; font-size:12px; background:none; border:solid 1px #505050; padding:5px; margin:5px 0px; }
-.contact_message { height:100px; }
-select, input, textarea { outline:none; background:none; border:0; }
-select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-box-shadow:#2080ad 0px 0px 5px; }
-
 
 /***************************************************************************************************
     RESPONSIVE
@@ -1210,6 +1195,11 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
 
     .heading-b {
         font-size: 3.4em;
+    }
+    
+    .heading-b.space-a {
+        margin-top: 2em!important;
+        font-weight: 100;
     }
 
     .space-c {
@@ -1273,6 +1263,11 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     .header .main-nav a:first-child {
         border-top: none;
     }
+    
+    .title-card {
+        height: 95%;
+    }
+    
 
     /* FOOTER */
 
@@ -1372,10 +1367,17 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
       padding: .66em;
       bottom: 1.6em;
       width: 82%;
+      font-size: 1.8em;
     }
     
     .project-feature .overlay {
       position: inherit;
+    }
+    
+    .project-feature .overlay-b .label {
+        margin-top: 0;
+        text-align: center;
+        
     }
     
     .current-case-study {
@@ -1496,21 +1498,33 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
         display: none;
     }
   
-    .slider > ul {
+    .slider.case-study > ul {
       left: 0!important;
       height: auto!important;
     }
-  
+    
     .slider .slide {
       float: none;
       display: block;
     }
+    
+    .slider.home-slide .slide, .slider.testimonials .slide {
+        float: left;
+    }
     .slider .slide + .slide {
       margin-top: 20px;
+    }
+    
+    .slider.home-slide .slide + .slide, .slider.testimonials .slide + .slide {
+      margin-top: 0px;
     }
 
     .slider {
       height:auto!important;
+    }
+    
+    .slider.testimonials {
+        height: 85em!important;
     }
     
     .slider .overlay {
@@ -1548,6 +1562,15 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
         font-size: 2.2em;
     }
 
+    /* CONTACT PAGE */
+    .column.column-7.space-c.contact h2 {
+        font-size: 3.2em;
+    }
+
+    .column.column-7.space-c.contact h2 a, .column.column-7.space-c.contact h2 span {
+        font-size: 1em;
+    }
+
     /* WELL */
 
     .well:before {
@@ -1570,7 +1593,7 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     }
 
     .overlay-a .label {
-        font-size: 2.8em;
+        font-size: 3.8em;
         text-align: center;
         font-weight: 600;
     }
@@ -1603,7 +1626,9 @@ select:focus, input:focus, textarea:focus { border:solid 1px #0066FF; -webkit-bo
     /* BUTTON */
 
     .button {
-        font-size: 2em;
+        font-size: 2.8em;
+        padding: .66em;
+        margin-top: 1em;
     }
 
     .overlay .button {

@@ -4,6 +4,8 @@
             <h1 class="heading-a heading-major">Projects</h1>
         </div>
       
+        <h1 class="heading-b space-a hide-desktop">Case Studies</h1>
+        
         <% blog('case_studies').articles.each do |entry| %>
           <div class="project-feature column column-4 space-c">
             <%= partial(:case_study_thumbnail, :locals => {:entry => entry }) %>
