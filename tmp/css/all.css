@@ -1339,6 +1339,10 @@ textarea:focus {
         margin: .5em .5em 0 0;
         font-size: 4em;
     }
+    
+    .project-feature {
+    height: 50em;
+    }
 
   
     .project-feature img {
@@ -1351,11 +1355,13 @@ textarea:focus {
       background-repeat:no-repeat;
       background-position: auto auto;
       min-height:auto;
-      height:auto;
+      height:100%;
+      width: 100%;
+      position: absolute;
     }
     
     .project-feature .button {
-      position: relative;
+      width: 86%;
       border-radius: 3px;
       padding: .66em;
       bottom: auto;
@@ -1371,13 +1377,13 @@ textarea:focus {
     }
     
     .project-feature .overlay {
-      position: inherit;
+      
+      background: rgba(0, 0, 0, .7);
+      
     }
     
     .project-feature .overlay-b .label {
-        margin-top: 0;
-        text-align: center;
-        
+        margin-top: 0;        
     }
     
     .current-case-study {
@@ -1410,6 +1416,7 @@ textarea:focus {
     
     h3.heading-project-description {
         font-size:4em;
+        margin: 0 auto 2em;
     }
     
     .case-studies .services_provided {
@@ -1441,7 +1448,7 @@ textarea:focus {
     .case-study-list-image {
         position: relative;
         height: 60em;
-        width: 370px;
+        width: 100%;
         overflow: hidden;
         text-align: center;
     }
@@ -1524,7 +1531,7 @@ textarea:focus {
     }
     
     .slider.testimonials {
-        height: 85em!important;
+        height: 95em!important;
     }
     
     .slider .overlay {
@@ -1640,6 +1647,20 @@ textarea:focus {
       border-radius:3px;
       
       display: block;
+    }
+    
+    .icon.icon-arrow-down{
+    font-size: 8em;
+    }
+    
+    .icon.icon-video.video-overlay {
+    font-size: 14em;
+    position: absolute;
+    z-index: 99;
+    left: 42%;
+    top: 32%;
+    color: rgba(255,255,255,.8);
+    text-shadow: 0 1px 5px rgba(0,0,0,.5);
     }
 }
 
