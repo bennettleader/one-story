@@ -271,11 +271,10 @@ img.full-width {
     height: 2.2em;
     line-height: 2.2em;
     display: inline-block;
-    background: #fbfbfb;
     padding: 0 1.5em;
     text-transform: uppercase;
     font-weight: 600;
-    color: #4f4f4f;
+    color: #FFF;
 }
 
 .button:hover {
@@ -284,6 +283,7 @@ img.full-width {
     -webkit-box-shadow: 0 1px 1px 0px black;
     -moz-box-shadow: 0 1px 1px 0px black;
     box-shadow: 0 1px 1px 0px black;
+    color: #4f4f4f;
 }
 /*************************************************
     OVERLAYS
@@ -445,7 +445,11 @@ img.full-width {
 
 .slider {
     padding-bottom: 40px;
-    height: auto !important;
+    height: auto!important;
+}
+
+.column-right .slider {
+    min-height: 61em;
 }
 
 .slider ul {
@@ -727,6 +731,35 @@ h3.heading-project-description {
 .more-image-preview img {
     margin-top: -50px;
 }
+
+.rollover-item {
+    position:relative;
+    overflow:hidden;
+    
+}
+
+.description_A {
+    position:absolute;
+    top:100%;
+    left:0;
+    display:block;
+    width:100%; /* as image */
+    height:100%; /* as image */
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    background:rgba(0,0,0,0.85);
+}
+
+.rollover-item:hover .description_A {
+    top:0;
+}
+
+.rollover-item:hover .description {
+    text-decoration: underline;
+}
+
 /*************************************************
     TITLE CARD
 *************************************************/
@@ -1653,14 +1686,9 @@ textarea:focus {
     font-size: 8em;
     }
     
-    .icon.icon-video.video-overlay {
-    font-size: 14em;
-    position: absolute;
-    z-index: 99;
-    left: 42%;
-    top: 32%;
-    color: rgba(255,255,255,.8);
-    text-shadow: 0 1px 5px rgba(0,0,0,.5);
+    i.icon.icon-mail {
+        font-size: 5em;
+        margin-top:2em;
     }
 }
 
@@ -1748,4 +1776,19 @@ textarea:focus {
 
 .icon-arrow-right:before {
     content: "\e610";
+}
+
+.icon.icon-video.video-overlay {
+    font-size: 6em;
+    position: absolute;
+    z-index: 99;
+    left: 42%;
+    top: 32%;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 1px 5px rgba(0,0,0,.33);
+}
+
+.project-link:hover .icon.icon-video.video-overlay{
+    color: rgba(255,255,255,1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.66);
 }

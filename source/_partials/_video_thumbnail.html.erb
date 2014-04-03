@@ -1,7 +1,15 @@
 <div class="image">
-    <img src="<%= entry.data.image_url %> " width="300" height="200" alt="">
+    <div class="rollover-item">
+        <img src="<%= entry.data.image_url %> " width="300" height="200" alt="">
+        
+        <div class="description_A">
+            <i class="icon icon-video video-overlay"></i>
+        </div>
+        
+        <div class="overlay overlay-c">
+            <div class="label"><%= entry.data.label %></div>
+            <div class="description"><%= entry.data.title %></div>
+        </div>              
+
+    </div>
 </div>
-<div class="overlay overlay-c">
-    <div class="label"><%= entry.data.label %></div>
-    <div class="description"><%= entry.data.title %></div>
-</div>              

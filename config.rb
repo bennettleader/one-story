@@ -120,6 +120,28 @@ activate :directory_indexes
        articles[index - 1]
      end
    end
+     
+   def next_video
+     articles =  blog('videos').articles
+     index = articles.find_index(current_page)
+     
+     if (articles.count - 1 == index)
+       articles.first
+     else
+       articles[index + 1]
+     end
+   end
+   
+   def previous_video
+     articles =  blog('videos').articles
+     index = articles.find_index(current_page)
+     
+     if (index == 0)
+       articles.last
+     else
+       articles[index - 1]
+     end
+   end
    
    
    
