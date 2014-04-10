@@ -14,6 +14,27 @@
   
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  
   <%= stylesheet_link_tag "all" %>
   <%= javascript_include_tag  "all" %>
+    
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+        padding: 0,
+        openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+        helpers : {
+            overlay: {
+                css: {
+                    'background' : 'rgba(0, 0, 0, 0.65)'
+                }
+            },
+            title: {
+                type: 'over'
+                }
+              }
+});
+	});
+</script> 
 </head>

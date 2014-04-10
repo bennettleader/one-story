@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
+    </script>
   <%= partial :head %>
   <body class="<%= page_classes %>">
-    <%= partial :header %>
+      <%= partial :header %>
     <div class="main-content">
       <div class="content">        
         <div class="case-study-header">
@@ -99,7 +100,7 @@
               </div>
               <% current_page.data['images'].each do |url| %>
                 <div class="column column-2 space-c image-grid image-space">
-                    <a href="<%= url %>"><img class="full-width" src="<%= url %>" width="140" height="100" alt=""></a>
+                    <a href="<%= url %>" class="fancybox" data-fancybox-group="gallery" title="<%= url %>"><img class="full-width" src="<%= url %>" width="140" height="100" alt=""></a>
                 </div>
               <% end %>
             <% end %>

@@ -57,7 +57,7 @@ stats:
 
 <p>&nbsp;</p>
 <div class="text text-center location">
-    <img class="full-width" src="../img/case-studies/unesco/locations.png" width="961" height="226" alt="">
+    <img class="full-width" src="/img/case-studies/unesco/locations.png" width="961" height="226" alt="">
     PRODUCTION LOCATIONS
 </div>
 <p>&nbsp;</p>
