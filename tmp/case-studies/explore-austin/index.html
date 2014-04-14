@@ -22,11 +22,16 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".fancybox").fancybox({
-        padding: 0,
+            padding: 0,
         openEffect	: 'elastic',
-    	closeEffect	: 'elastic',
+        openSpeed : 150,
+    	closeEffect	: 'fade',
+        closeSpeed : 150,
+        closeClick : false,
+            margin : [20, 60, 20, 60],
         helpers : {
             overlay: {
+                locked: false,
                 css: {
                     'background' : 'rgba(0, 0, 0, 0.65)'
                 }
