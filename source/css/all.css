@@ -1550,6 +1550,7 @@ a.fancybox {
         width: 16em;
         height: 6em;
         float: none;
+        margin-top: .5em;
     }
     
     .header a {
@@ -1809,6 +1810,7 @@ a.fancybox {
     .title-card .caption {
         background: rgba(0, 0, 0, .5);
         color: #f5f5f5;
+        display:none;
     }
 
     .title-card p {
