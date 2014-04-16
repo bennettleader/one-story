@@ -764,6 +764,21 @@ h3.heading-project-description {
     text-decoration: underline;
 }
 
+.icon.icon-video.video-overlay {
+    font-size: 6em;
+    position: absolute;
+    z-index: 99;
+    left: 42%;
+    top: 32%;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 1px 5px rgba(0,0,0,.33);
+}
+
+.project-link:hover .icon.icon-video.video-overlay{
+    color: rgba(255,255,255,1);
+    text-shadow: 0 1px 5px rgba(0,0,0,.66);
+}
+
 /*************************************************
     TITLE CARD
 *************************************************/
@@ -1086,6 +1101,7 @@ textarea:focus {
     width: 135px;
     background: url(../img/one-story-logo.png) no-repeat 50% 14px;
     background-size: contain;
+    margin-top: -2px;
 }
 
 .header a {
@@ -1788,7 +1804,7 @@ a.fancybox {
     }
     
     .case-study-list-image img {
-        left: -50%;
+        /*left: -50%;*/
     }
     
     .overlay .case-study-list {
@@ -1871,6 +1887,26 @@ a.fancybox {
     
     .slider .overlay {
         background: rgba(0, 0, 0, .65);
+    }
+    
+    .slide {
+        min-height: 60em;
+    }
+    .slide .image {
+        position: relative;
+        height: 60em;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .slider img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -50%;
+        height: 100%;
+        width: auto;
     }
   
 
@@ -1964,6 +2000,22 @@ a.fancybox {
     .overlay-c .description {
         font-size: 3em;
     }
+    
+    .icon.icon-video.video-overlay {
+        font-size: 6em;
+        position: absolute;
+        z-index: -9999;
+        left: -9999px;
+        color: rgba(255,255,255,.66);
+    }
+
+    .project-link:hover .icon.icon-video.video-overlay{
+        color: rgba(255,255,255,1);
+        text-shadow: 0 1px 5px rgba(0,0,0,.33);
+    }
+     .description_A {
+        background:rgba(0,0,0,0.5);
+     }
 
     /* BUTTON */
 
@@ -2078,19 +2130,4 @@ a.fancybox {
 
 .icon-arrow-right:before {
     content: "\e610";
-}
-
-.icon.icon-video.video-overlay {
-    font-size: 6em;
-    position: absolute;
-    z-index: 99;
-    left: 42%;
-    top: 32%;
-    color: rgba(255,255,255,.9);
-    text-shadow: 0 1px 5px rgba(0,0,0,.33);
-}
-
-.project-link:hover .icon.icon-video.video-overlay{
-    color: rgba(255,255,255,1);
-    text-shadow: 0 1px 5px rgba(0,0,0,.66);
 }
