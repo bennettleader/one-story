@@ -1,7 +1,7 @@
 ---
 title: Explore Austin
 logo: /img/client-thumbnails/explore_austin.png
-description: We’ve been working with Explore Austin since 2007 to help them connect with their supporters. We are able to tag along on their summer wilderness Trips.
+description: A client since 2007, each summer we tag along on Explore Austin’s wilderness Trips where we capture the footage that helps them connect with their supporters.
 location: Austin, Texas
 date: 2012-01-01
 image_url: img/case-study-previews/explore-austin.png
@@ -31,10 +31,13 @@ stats:
 ---
 
 <h2 class="heading-b heading-major">Background</h2>
-<p>Aaron has travelled to Colorado, Washington and Missouri to capture the programs that Explore Austin offers. 
-</p>
+<p>Founded in 2006, Explore Austin combines the benefits of mentoring and outdoor adventure in a six-year program for 6th through 12th grade underserved youth.</p>
 
-<p></p>
+<p>One Story Productions has been a part of Explore Austin’s brand development since 2007.</p>
+
+<p>We have travelled to Colorado, Washington and Missouri to capture the programs that Explore Austin offers.</p>
+
+<p>The films help to recruit mentors/volunteers, fundraise and thank sponsors/donors.</p>
 
 <p><strong>PROJECTS</strong></p>
 <ul class="services_provided">

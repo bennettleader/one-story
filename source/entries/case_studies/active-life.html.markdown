@@ -1,17 +1,13 @@
 ---
-title: Active Life
+title: It's Time Texas
 logo: /img/client-thumbnails/active-life.png
-description: We have worked with ACTIVE Life and IT’S TIME TEXAS since 2010. ACTIVE Life is a social change nonprofit working to organize and accelerate the movement to make healthy the norm.
-location: Austin, Texas
+description: For four years we have worked with IT’S TIME TEXAS and its parent organization ACTIVE Life. Together we capture this first-of-its-kind cause whose mission is to empower people to lead healthier lives and build healthier communities.
 date: 2012-01-01
 image_url: img/case-study-previews/active-life.png
 carousel_image_url: img/slider-case-studies/active-life.jpg
 
 images: 
-  - /img/case-studies/unesco/photo-1.png
-  - /img/case-studies/unesco/photo-1.png
-  - /img/case-studies/unesco/photo-1.png
-  - /img/case-studies/unesco/photo-1.png
+
 
 videos:
   - 
@@ -32,9 +28,13 @@ stats:
 ---
 
 <h2 class="heading-b heading-major">Background</h2>
-<p>We’ve travelled around the state to produce projects that help them unite and mobilize individuals, institutions, and organizations to build healthier communities.</p>
+<p>One Story Productions has travelled around the state to produce projects that help IT’S TIME TEXAS unite and mobilize individuals, institutions, and organizations to build healthier communities.</p>
 
-<p>IT’S TIME TEXAS (ITT) is a first-of-its-kind cause that motivates and mobilizes people to make healthy the norm where they live, learn, work, worship, and shop.</p>
+<p>We have worked hand-in-hand with IT’S TIME TEXAS staff since its launch. In doing so, One Story Productions has been instrumental in establishing the brand voice, providing consultation on project development, and growing the cause into what it is today. </p>
+
+<p>As of 2014, One Story Production’s work for IT’S TIME TEXAS has been in front of the nearly 4.5 million Texas who’ve joined the cause to date.</p>
+
+<p>Poised to continue, this impactful partnership will continue to grow and touch millions of Texans in years to come.</p>
 
 <p><strong>SERVICES PROVIDED</strong></p>
 <ul class="services_provided">
@@ -46,6 +46,8 @@ stats:
 </ul>
 <p>&nbsp;</p>
 <h2 class="heading-b heading-major">Outcome</h2>
-<p>"Aaron was a true professional throughout the process and captured the spirit of each project. The films helped our efforts by…</p>
-
-<p>Aaron travelled to three continents to help feature the many cultural projects that ACTIVE Life supports around the state.</p>
+<p>“One Story and Aaron Weiss are the shepherds of our story at IT’S TIME TEXAS.  As a cause, our success is dependent upon our ability to authentically capture and harness the stories of those with whom we work and are honored to serve.  We, therefore, hold storytelling, especially through the medium of video, in the highest regard.</p>
+ 
+<p>While storytelling is one of the oldest human traditions, it takes a special talent to be able to collect often diverse and distinct stories and weave together a coherent and compelling narrative that remains true to all individual contributors.  We are so fortunate to have found that rare talent in Aaron and One Story.  With One Story, we know that IT’S TIME TEXAS’ story is in very good hands.”</p>
+<p>&mdash;Baker Harrell<br />
+CEO, It’s Time Texas (Formerly ACTIVE Life)</p>

@@ -844,6 +844,20 @@ h3.heading-project-description {
     padding: .5em 0;
 }
 
+.prev-project {
+    position: absolute;
+    left:0;
+    padding: 2.1em 0 0;
+    font-size: 2em;
+}
+
+.next-project {
+    position: absolute;
+    right:0;
+    padding: 2.1em 0 0;
+    font-size: 2em;
+}
+
 /*************************************************
     CASE STUDIES
 *************************************************/
@@ -1737,6 +1751,18 @@ a.fancybox {
         margin-top: 0;        
     }
     
+    .prev-project {
+      padding: 2.1em 0 0;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    
+    .next-project {
+      padding: 2.1em 0 0;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    
     .current-case-study {
     width: 50%;
     }
@@ -1890,7 +1916,7 @@ a.fancybox {
         background: rgba(0, 0, 0, .65);
     }
     
-    .slide {
+    .home-slide .slide {
         min-height: 60em;
     }
     .slide .image {
