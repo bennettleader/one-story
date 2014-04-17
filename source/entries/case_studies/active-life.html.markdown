@@ -3,6 +3,7 @@ title: It's Time Texas
 logo: /img/client-thumbnails/active-life.png
 description: For four years we have worked with IT’S TIME TEXAS and its parent organization ACTIVE Life. Together we capture this first-of-its-kind cause whose mission is to empower people to lead healthier lives and build healthier communities.
 date: 2012-01-01
+location: Austin, TX
 image_url: img/case-study-previews/active-life.png
 carousel_image_url: img/slider-case-studies/active-life.jpg
 

@@ -306,7 +306,7 @@ img.full-width {
 
 .overlay .label {
     text-transform: none;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .overlay .description {
@@ -409,6 +409,18 @@ img.full-width {
     padding: 2em 0;
 }
 
+.testimonial p {
+    font-style: oblique;
+    color: #808080;
+    font-size: 1.6em;
+    font-weight: 100;
+    line-height: 1.6em;
+}
+
+.column-7 hr {
+        margin-top:5em;
+    }
+
 .testimonial .avatar {
     float: left;
     display: block;
@@ -430,7 +442,7 @@ img.full-width {
     right: 0;
     top: 0;
     width: auto;
-    height: 70px;
+    max-height: 70px;
 }
 
 .testimonial-container {
@@ -453,7 +465,7 @@ img.full-width {
 }
 
 .column-right .slider {
-    min-height: 61em;
+    min-height: 28em;
 }
 
 .slider ul {
@@ -513,11 +525,21 @@ img.full-width {
 }
 
 .slider-container {
+    z-index: -1;
  }
 
 .slider.slider-show {
     height: 1000px;
 }
+
+.slider.testimonials {
+        height: 42em!important;
+    }
+
+.column-right .slider.testimonials {
+        height: 24em!important;
+        min-height: 26em;
+    }
 
 ol.jump-buttons {
   box-sizing:border-box;
@@ -627,11 +649,11 @@ li.jump-button {
     display: table-row;
 }
 
-.clients .row a {
-    padding-top: 1em;
+.clients .row img {
+    padding: 1em 1em 0;
 }
 
-.clients .row:first-child a {
+.clients .row:first-child img {
     padding-top: 0;
 }
 
@@ -1095,7 +1117,6 @@ textarea:focus {
     z-index: 10;
     text-transform: uppercase;
     background: #192f3d;
-    text-shadow: 1px 1px 0px #000;
     position: fixed;
     top:0;
     width: 100%;
@@ -1125,11 +1146,13 @@ textarea:focus {
     color: #d6d6d6;
     display: block;
     float: left;
+    letter-spacing: .07em;
 }
 
 .header a:hover {
     color: #fff;
     text-decoration: none;
+    text-shadow: 1px 1px 0px #000;
 }
 
 .header .main-nav a {
@@ -1946,6 +1969,8 @@ a.fancybox {
         line-height: 1.6em;
         font-size: 2.6em;
     }
+    
+    
 
     .testimonial .text {
         line-height: 1.4em;
@@ -1964,6 +1989,11 @@ a.fancybox {
     
     .text.role {
         font-size: 2.2em;
+    }
+    
+    .column-right .slider {
+        height: 30em!important;
+        min-height: 30em!important;
     }
 
     /* CONTACT PAGE */
