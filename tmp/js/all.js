@@ -2347,4 +2347,33 @@ $(function(){
 });
 
 
+/***************************************************************************************************
+        HOMEPAGE BG IMAGE TRANSITION
+    ***************************************************************************************************/
+
+$(window).load(function(){
+    
+var initialBg =  $('.title-card').css("background-image");
+    
+var firstTime = true;
+var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", "url(img/homepage/bg3.jpg)", "url(img/homepage/bg4.jpg)", "url(img/homepage/bg5.jpg)"];
+    (function recurse(counter) {
+        var bgImage = arr[counter];
+        if (firstTime == false) {
+            $(".title-card").fadeOut("slow", function(){
+                $('.title-card').css('background-image', bgImage);
+            });
+            $(".title-card").fadeIn("slow");
+        } else {
+            firstTime = false;
+        }               
+        delete arr[counter];
+        arr.push(bgImage);
+        setTimeout(function() {
+            recurse(counter + 1);
+        }, 4500);
+    })(0);      
+});
+
+
 

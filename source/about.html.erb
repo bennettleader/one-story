@@ -1,5 +1,12 @@
 ---
 title: About
+images: 
+  - img/about/aaron_weiss_1.jpg
+  - img/about/aaron_weiss_2.jpg
+  - img/about/aaron_weiss_3.jpg
+  - img/about/aaron_weiss_4.jpg
+  - img/about/aaron_weiss_5.jpg
+  - img/about/aaron_weiss_6.jpg
 ---
 
     <section>
@@ -9,16 +16,21 @@ title: About
                 <p class="large">One Story Productions partners with non-profits and businesses to tell the story behind their missions.</p>
                 <p></p>
             </div>
-            <div class="column column-7">
+            <div class="column column-5">
                 <p>Recognizing that non-profits, foundations and companies have a need to demonstrate  their work’s vital role in the community, One Story Productions launched in 2007. 
 For each client we create a unique brand development plan. First we sit down together. We document goals and expectations based on an understanding of what’s important and how a brand film can best fit within larger marketing / brand strategy. </p>
                 <p>Through collaboration, we create visual voices that tell real stories. 
 Production services can span from a one-man crew to a 10-person production. Post-production is detailed and unique—this is where the story takes shape, so we work with clients until they love the final products. 
 </p>
             </div>
-            <div class="column column-4 column-right">                
-                <p><img class="full-width" src="img/aaron-filming.jpg" width="320" height="195" alt=""></p>
-            </div>
+            <% if current_page.data['images'] %>
+
+              <% current_page.data['images'].each do |url| %>
+                <div class="column column-2 space-c image-grid image-space">
+                    <a href="<%= url %>" class="fancybox" data-fancybox-group="gallery" title="<%= url %>"><img class="full-width" src="<%= url %>" width="140" height="100" alt=""></a>
+                </div>
+              <% end %>
+            <% end %>
         </div>
         
     </section>
