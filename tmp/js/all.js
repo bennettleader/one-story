@@ -2351,6 +2351,24 @@ $(function(){
         HOMEPAGE BG IMAGE TRANSITION
     ***************************************************************************************************/
 
+function preloadImages(srcs) {
+    if (!preloadImages.cache) {
+        preloadImages.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        preloadImages.cache.push(img);
+    }
+}
+
+// then to call it, you would use this
+var imageSrcs = ["img/homepage/bg1.jpg", "img/homepage/bg2.jpg", "img/homepage/bg3.jpg", "img/homepage/bg4.jpg", "img/homepage/bg5.jpg"];
+
+preloadImages(imageSrcs);
+
+
 $(window).load(function(){
     
 var initialBg =  $('.title-card').css("background-image");

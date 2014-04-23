@@ -1545,6 +1545,9 @@ and (orientation : portrait) {
     body {
         max-width: 768px;
     }
+    .header .contact-link {
+        float: left;
+    }
 }
 
 /*************************************************
