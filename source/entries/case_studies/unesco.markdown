@@ -4,8 +4,8 @@ logo: /img/client-thumbnails/unesco.png
 description: This inspiring, large-scale, project took our cause-focused documentary work global. Producing films shot in Senegal, Argentina, and Croatia.
 date: 2014-01-01
 location: Paris, France
-image_url: img/case-study-previews/unesco.png
-carousel_image_url: img/slider-case-studies/unesco.jpg
+image_url: /img/case-study-previews/unesco.png
+carousel_image_url: /img/slider-case-studies/unesco.jpg
 images: 
   - http://farm8.staticflickr.com/7402/8719038688_a35274f028_c.jpg
   - http://farm8.staticflickr.com/7331/8719050434_8721f02360_c.jpg

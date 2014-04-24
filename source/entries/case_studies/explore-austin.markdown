@@ -4,8 +4,8 @@ logo: /img/client-thumbnails/explore_austin.png
 description: A client since 2007, each summer we tag along on Explore Austin’s wilderness Trips where we capture the footage that helps them connect with their supporters.
 location: Austin, Texas
 date: 2012-01-01
-image_url: img/case-study-previews/explore-austin.png
-carousel_image_url: img/slider-case-studies/explore-austin.jpg
+image_url: /img/case-study-previews/explore-austin.png
+carousel_image_url: /img/slider-case-studies/explore-austin.jpg
 images: 
   - http://farm8.staticflickr.com/7034/6505694697_ebe6536f8d_b.jpg
   - https://farm8.staticflickr.com/7020/6505692455_449ffd4b35_b.jpg

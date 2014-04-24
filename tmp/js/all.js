@@ -2374,7 +2374,7 @@ $(window).load(function(){
 var initialBg =  $('.title-card').css("background-image");
     
 var firstTime = true;
-var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", "url(img/homepage/bg3.jpg)", "url(img/homepage/bg4.jpg)", "url(img/homepage/bg5.jpg)"];
+var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", "url(img/homepage/bg3.jpg)", "url(img/homepage/bg4.jpg)", "url(img/title-card.jpg)"];
     (function recurse(counter) {
         var bgImage = arr[counter];
         if (firstTime == false) {
