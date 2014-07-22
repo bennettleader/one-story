@@ -641,7 +641,7 @@ li.jump-button {
 
 .clients {
     margin: 0 auto;
-    width: 50em;
+    width: 90em;
     display: table;
 }
 
@@ -655,7 +655,7 @@ li.jump-button {
 }
 
 .clients .row:first-child img {
-    padding-top: 0;
+    padding-top: 1em;
 }
 
 .clients a {
