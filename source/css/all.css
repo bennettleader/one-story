@@ -1696,6 +1696,11 @@ and (orientation : portrait) {
         margin: .1em .3em 0;
         display: inline-block;
     }
+    
+    .footer .laurels {
+        max-width: 100%;
+    }
+    
 
     /* GRID */
 
