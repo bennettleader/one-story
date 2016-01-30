@@ -1,0 +1,36 @@
+// Services Page CSS
+.services-home { background: url(/img/backgrounds/services.jpg) 50% 50%;}
+.services-ux { background: url(/img/backgrounds/ux.jpg) 50% 50%; }
+.services-ui { background: url(/img/backgrounds/ui.jpg) 50% 50%; }
+.services-product { background: url(/img/backgrounds/product.jpg) 50% 50%; }
+.services-app { background: url(/img/backgrounds/app.jpg) 50% 50%; }
+.services-web { background: url(/img/backgrounds/web.jpg) 50% 50%; }
+
+.services-home, .services-ux, .services-ui, .services-product, .services-app, .services-web {
+    height: em(400);
+}
+
+
+.service_item {
+    margin-bottom: em(35);
+}
+
+.other_services {
+    margin-top: em(20);
+    li {
+        height: em(70);
+    }
+    img {
+        margin-right: em(10);
+    }
+}
+
+.column-left.service-page {
+    p {
+        margin-bottom: $base-spacing;
+    }
+    ul {
+        margin-top: 0 - $base-spacing;
+        margin-bottom: $base-spacing;
+    }
+}

@@ -1,0 +1,35 @@
+// About Page CSS
+#about_major {
+    @include span-columns (4 of 6);
+    @include shift(1);
+    
+    .col1, col2 {
+        @include span-columns (2 of 4);
+        float: left;
+        
+    }
+    
+    h2 {
+        font-size: em(60);
+        text-transform: uppercase;
+        margin: em(44) 0 em(22);
+    }
+    
+    h6 { 
+        margin-top: em(30);
+    }
+    
+    .team_image {
+        float: left;
+        
+        img {
+            width: 120px;
+        }
+    }
+    
+    .team_member_name {
+        display: inline-block;
+        margin: 2em 0 0 .5em;
+    }
+}
+

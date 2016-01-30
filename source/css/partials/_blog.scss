@@ -1,0 +1,125 @@
+// Blog Styles
+body.blog .navigation {
+    h1.logo-text a {
+        color: $dark-gray;
+    }
+    h1.logo-text #logo-svg svg {
+        fill: $dark-gray;
+    }
+    .nav {
+        display: none;
+    }
+}
+#blog_header {
+    @include span-columns (4 of 6);
+    @include shift(1);
+    text-align: center;
+    padding: em(80) 0 em(40);
+    //border-bottom: 1px solid $base-border-color;
+    //margin-bottom: em(65); 
+    
+    h2 {
+        font-size: em(48);
+    }
+    h5 {
+        border-bottom: 1px solid $medium-gray;
+        padding: em(5) 0 em(25);
+        display: inline-block;
+        margin: 0 0 em(30);
+        width: 100%;
+        
+        a {
+            color: $medium-dark-gray;
+        }
+        a:hover {
+            color: $hover-link-color;
+        }
+    }
+    p {
+        color: $medium-dark-gray;
+        margin: em(10) 0 0;
+        
+    }
+    
+    .tags {
+        a {
+            padding: 0 em(10);
+        }
+    }
+    @include media($mobile) {
+        @include shift(0);
+        @include span-columns (6 of 6)
+    }
+}
+
+.blog_post {
+    @include shift(1);
+    
+    #mc_embed_signup {
+        margin-top: em(30);
+        .mc-field-group {
+            margin-top: em(15);
+        }
+        .email {
+            width: em(400);
+            float: left;
+            height: em(40);
+            margin-right: em(10);
+            
+            @include media($mobile) {
+                width: em(300);
+            }
+        }
+    }
+    
+    .date {
+        border-top: $medium-gray 1px solid;
+        margin-top: em(60);
+        padding-top: em(30);
+        font-weight: 700;
+    }
+    .small {
+        font-size: em(12);
+        color: $medium-dark-gray;
+    }
+
+    .sharelink a {
+    }
+    @include media($mobile) {
+        @include shift(0);
+        @include span-columns (6 of 6)
+    }
+}
+
+.blog_post_list_item {
+    border-bottom: 1px solid $base-border-color;
+    padding-bottom: em(30);
+    margin-bottom: em(35); 
+    
+    
+    .byline {
+        font-size: em(14);
+        color: $medium-dark-gray;
+        a {
+            color: $medium-dark-gray;
+        }
+    }
+    
+    .tags {
+        margin-left: em(35);
+    }
+}
+
+.blog_post_list_item:last-child {
+    border: none;
+}
+
+.image_caption {
+    text-align: left;
+    color: $medium-dark-gray;
+    font-size: em(13);
+    
+    img {
+        text-align: center;
+    }
+}

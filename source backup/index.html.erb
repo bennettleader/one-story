@@ -1,0 +1,54 @@
+---
+title: Home
+---
+
+<section class="title-card">
+    <div class="content text-center">
+        <h1>Helping You Find Your Visual-Voice</h1>        
+        <div class="content text-center caption">
+        <p>Ten years ago, we set out to create products that would transform the way organizations use their data. Today, our products are deployed at the most critical government, commercial, and non-profit institutions in the world to solve problems we hadn’t even dreamed of back then.
+</p> 
+            <a href="https://vimeo.com/150799305" class="button fancybox" id="cta_homepage">This is our Story &rsaquo;</a>
+    </div>
+    </div>
+    <!--<img class="eye-logo" src="img/one-story-eye-logo.png" width="269" height="154" alt="One Story Productions Logo">-->
+    <i class="icon icon-arrow-down scroll-indicator"></i>
+</section>
+<div class="main-content">
+    <section class="well space-a">
+        <div class="content">
+            <div class="column column-12">
+                <h1 class="heading-a heading-inline">Case Studies</h1>
+                <a href="/projects" class="text">All case studies &rsaquo;</a>
+            </div>
+            <div class="column column-12 space-c">
+                <div class="slider-container">
+                    <div class="slider slider-auto home-slide">
+                        <ul>
+                          <% blog('case_studies').articles.each do |entry| %>
+                            <li class="slide">
+                              <%= partial(:case_study_carousel, :locals => {:entry => entry }) %>
+                            </li>
+                          <% end %>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="space-b">
+        <div class="content">
+            <div class="column column-12">
+                <h1 class="heading-b heading-minor-inline">Recent Projects</h1>&nbsp;<a href="/projects" class="text">All projects &rsaquo;</a>
+            </div>
+            <% blog('videos').articles.select { |a| a.data[:front_page] }.each do |entry| %>
+              <a href="<%= url_for(entry) %>" class="project-link column column-4 space-c">
+                <%= partial(:video_thumbnail, :locals => {:entry => entry }) %>
+              </a>
+            <% end %>
+            <div class="column column-12 text-center space-c">
+                
+            </div>
+        </div>
+    </section>        
+</div>

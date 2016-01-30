@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    //padding-top: em(60);
+}
+
+#main {
+    @include outer-container;
+    @include media($mobile) {
+        padding: 0 em(10);
+    }
+}
+
+ol {
+    font-size: 1em;
+    font-weight: 500;
+    
+    li {
+        margin: .5em 0;
+        
+    span {
+        display: inline-block;
+        
+    &:before {
+        content: '/';
+        margin: 0 .3em;
+    }
+   }
+  }
+ }
+
+.clearfix {
+    @include clearfix;
+}
+
+.clear {
+    clear: both;
+}
+
+.column-left {
+    @include span-columns (4 of 6);
+    @include media($mobile) {
+        @include span-columns (6 of 6)
+    }
+}
+
+.column-right {
+    @include span-columns (2 of 6);
+    @include omega();
+    @include media($mobile) {
+        @include span-columns (6 of 6)
+    }
+}
+
+.column-three {
+    @include span-columns (3 of 6);
+}
+
+.column-five {
+    @include span-columns (5 of 6);
+    margin-bottom: em(30);
+}
+
+.top-border {
+    border-top: 1px solid $base-border-color;
+    padding-top: em(30);
+    margin-top: em(30);
+}
+
+.start-project {
+    margin-top: em(100);
+}
+
+#home_major, #what_we_do {
+    @include span-columns (4 of 6);
+    @include shift(1);
+    text-align: center;
+    clear: both;
+}
+
+section.page_header_block.none { background: none; text-align: center; }
+
+.about_index {
+    background: url(/img/backgrounds/about.jpg) #fff no-repeat; 
+    background-position: top;
+
+}

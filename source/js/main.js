@@ -136,7 +136,7 @@ $(function(){
 
 /***************************************************************************************************
         HOMEPAGE BG IMAGE TRANSITION
-    ***************************************************************************************************/
+    **************************************************************************************************
 
 function preloadImages(srcs) {
     if (!preloadImages.cache) {
@@ -179,3 +179,43 @@ var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", 
         }, 4500);
     })(0);      
 });
+*/
+
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
+
+
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
+
+

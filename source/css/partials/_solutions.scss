@@ -1,0 +1,153 @@
+// Solutions page styles
+.solutions-home { background: url(/img/backgrounds/solutions.jpg) 50% 50%; }
+
+#solutions_list {
+    margin-top: em(50);
+    li {
+        float: left;
+        width: em(304);
+        height: em(304);
+        padding: em(34) 0 0 0;
+        text-align: center;
+        background: #fafafa;
+        display: block;
+        border: 1px solid $base-border-color;
+        
+        @include media($mobile) {
+            width: 100%;
+            margin-bottom: em(20);
+        }
+        
+        img {
+            margin-top: em(10);
+        }
+        
+        h6 {
+            margin-top: em(15);
+        }
+    }
+    li:hover {
+        background-color: #fafafa;
+        box-shadow: 0px 0px em(10) #ebebeb;
+    }
+    a {
+        display:inline-block;
+        margin-right: em(21);
+        color: $base-font-color;
+        @include media($mobile) {
+            width: 100%;
+        }
+    }
+    a:last-child {
+        margin-right: 0;
+    }
+}
+
+.solution_image {
+    margin: em(30);
+    color: $medium-dark-gray;
+    font-size: em(13);
+    img {
+        width: 100%;
+    }
+}
+
+.solution_main_images {
+    float: left;
+    text-align: center;
+    margin-bottom: em(10);
+    width: 100%;
+    
+    .desktop-web-preview {
+        margin-top: em(30);
+        width: 80%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .mobile-web-preview {
+        width: 15%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.mobile_sample {
+    position: relative;
+    margin-top: -325px;
+    @include media($mobile) {
+        margin-top: -180px;
+    }
+    float: left;
+    margin-left: 20px;
+}
+
+img.mobile_sample {
+    width: 30%;
+}
+
+.circle_image {
+    text-align: center;
+    margin: 20px 0;
+    img {
+        width: 30%;
+    }
+    strong {
+        text-align: center;
+    }
+}
+
+.pullquote {
+    font-style: italic;
+    font-size: em(24);
+    color: $medium-dark-gray;
+    margin-bottom: em(5);
+    border-top: 1px  dotted $medium-gray;
+    margin-top: em(20);
+    padding-top: em(20);
+    
+}
+.pullquote_author {
+    font-weight: 700;
+    font-size: em(13);
+    color: $medium-dark-gray;
+    border-bottom: 1px  dotted $medium-gray;
+    margin-bottom: em(30);
+    padding-bottom: em(40);
+}
+
+.project-summary {
+    @include media($mobile) {
+        h5 {
+            margin: em(20) 0 em(10);
+            padding-top: em(30);
+            border-top: 1px solid $medium-gray;
+        }
+        ul {
+            li {
+                float: left;
+                @include span-columns (3 of 6);
+            }
+            li:nth-child(2n+2) {
+                margin-right: 0;   
+            }
+        }
+
+        ul.default {
+            li {
+                float: none;
+                display: list-item;
+            }
+        }
+    }
+}
+
+.next_case_study {
+    padding-top: 0;
+    h4 {
+        margin: em(15) 0 0;
+        a {
+            color: $dark-gray;
+        }
+    }
+}

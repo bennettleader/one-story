@@ -1,0 +1,113 @@
+.well {
+    background: $light-gray;
+    border: 1px solid $base-border-color;
+    border-radius: $base-border-radius;
+    padding: em(25);
+}
+
+.light {
+    font-weight: 100;
+    text-transform: none;
+}
+
+h4.light {
+        line-height: 1.5em;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.label {
+    font-weight: 400;
+}
+
+.page_header_block {
+    background: #ccc;
+    height: 400px;
+    @include media($mobile) { 
+        height: 200px;
+    }
+    margin-bottom: em(65);
+    h2 {
+        font-size: em(60);
+        text-transform: uppercase;
+        float: left;
+        margin-top: em(44);
+        @include media($mobile) {
+            float: left;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: em(30);
+            font-size: $h2-font-size;
+            text-align: center;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+    float: left;
+}
+
+.dash {
+    width: em(24);
+    height: em(5);
+    background: $dark-gray;
+    margin: em(10) auto;
+    display: inline-block;
+}
+
+.circle {
+	border-radius: 50%;
+	width: em(140);
+	height: em(140); 
+	background: #f5f5f5;
+}
+
+.small_circle {
+	border-radius: 50%;
+	width: em(50);
+	height: em(50); 
+	background: #f5f5f5;
+    vertical-align: middle;
+}
+
+.underline {
+    border-bottom: 1px solid $base-border-color;
+}
+
+.overline {
+    border-top: 1px solid $base-border-color;
+    margin-top: 30px;
+    padding: 30px 0 20px;
+}
+
+ul.default {
+    @extend %default-ul;
+}
+
+.people_blog_posts {
+    p {
+        margin: 0;
+        font-size: em(14);
+        font-weight: 700;
+    }
+    .small {
+        font-weight: 400;
+        margin-bottom: em(20);
+        font-size: em(12);
+        color: $medium-dark-gray;
+    }
+}
+
+
+//Contact Form Typography
+#contact_phone {
+    input {
+        width: em(60);
+        float: left;
+        margin-right: em(10);
+    }
+    clear: both;
+}

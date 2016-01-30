@@ -1,0 +1,51 @@
+#footer_bg {
+    background-color: $light-gray;
+    margin-top: em(60);
+}
+footer {
+  //border-top: 1px solid $base-border-color;
+  //margin: 2em 0 0;
+  padding-top: 2em;
+  display: inline-block;
+}
+
+footer ul {
+    @include span-columns(2);
+    
+    @include media($mobile) {
+        @include span-columns(3);
+        margin-bottom: em(10);
+    }
+    
+    font-size: em(12);
+    font-weight: bold;
+    li {
+        font-weight: normal;
+    }
+    li.subhead {
+        font-weight: bold;
+        color: #999;
+    }
+}
+
+@include media($mobile) {
+        footer ul:nth-of-type(2n) {
+           margin-right: 0;   
+        }
+    }
+
+footer ul#start_project {
+    @include span-columns(2);
+    
+    @include media($mobile) {
+        @include span-columns(6);
+    }    
+}
+
+.copyright {
+    font-size: em(11);
+    margin: em(30) 0;
+    clear: both;
+    @include clearfix;
+    color: $medium-dark-gray;
+}

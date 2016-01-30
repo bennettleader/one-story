@@ -263,6 +263,7 @@ img.full-width {
     COMPONENTS
 ***************************************************************************************************/
 
+
 /*************************************************
     BUTTONS
 *************************************************/
@@ -284,10 +285,48 @@ img.full-width {
 .button:hover {
     background: #ececec;
     text-decoration: none;
-    -webkit-box-shadow: 0 1px 1px 0px black;
-    -moz-box-shadow: 0 1px 1px 0px black;
-    box-shadow: 0 1px 1px 0px black;
+    -webkit-box-shadow: 0px 1px 1px 0px black;
+    -moz-box-shadow: 0px 1px 1px 0px black;
+    box-shadow: 0px 1px 1px 0px black;
     color: #4f4f4f;
+}
+
+.button#cta_homepage {
+    font-size: 2em;
+    padding: 5px 25px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    border: 2px solid rgba(255,255,255,.80);
+    border-radius: 2px;
+    color: rgba(255,255,255,.80);
+}
+
+.button#cta_homepage:hover {
+    background: none;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 0px 0px black;
+    -moz-box-shadow: 0px 0px 0px 0px black;
+    box-shadow: 0px 0px 0px 0px black;
+    border-color: #fff;
+}
+
+.header .main-nav a.cta_button {
+    border-radius: .3em;
+    display: inline-block;
+    background-color: #FF9500;
+    display: inline-block;
+    height: 1em;
+    line-height: inherit;
+    color: #233846;
+    float: right;
+    padding: 6px 10px 12px 10px;
+    margin: 12px 12px 7px 0;
+    border: 0;
+}
+
+.header .main-nav a.cta_button:hover {
+    background-color: #FF9F1A;
+    text-shadow: none;
 }
 /*************************************************
     OVERLAYS
@@ -554,6 +593,7 @@ ol.jump-buttons {
 li.jump-button.active {
   background-color:#000;
   color:#FFF;
+    border-radius: 3px;
 }
 
 li.jump-button {
@@ -808,30 +848,45 @@ h3.heading-project-description {
 .title-card {
     color: #0c2836;
     margin-top: 0;
-    background: url(../img/homepage/bg5.jpg) 40% 50%;
-    background-size: cover;
+    background-color: rgba(25,47,61, 1);
     height: 99%;
     cursor:pointer;
 }
 
+.title-card::after {
+    content: "";
+    background: url(../img/homepage/bg5.jpg) 100% 50%;
+    background-size: cover;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
 .title-card .content {
-    top: 30%;
+    top: 25%;
 }
 
 .title-card h1 {
     margin-top: 1em;
     letter-spacing: .1em;
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, .2);
     color: #fff;
     text-transform: uppercase;
-    font-size: 3.5em;
+    font-size: 5em;
+    max-width: 30em;
 }
 
 .title-card p {
-    font-weight: 600;
+    font-weight: 400;
     margin-left: auto;
     margin-right: auto;
-    max-width: 46em;
+    max-width: 40em;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
 }
 
 .scroll-indicator {
@@ -1116,7 +1171,7 @@ textarea:focus {
 .header {
     z-index: 10;
     text-transform: uppercase;
-    background: #192f3d;
+    background: rgba(25,47,61, .95);
     position: fixed;
     top:0;
     width: 100%;
@@ -1133,16 +1188,18 @@ textarea:focus {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    width: 135px;
-    background: url(../img/one-story-logo.png) no-repeat 50% 14px;
+    width: 190px;
+    background: url(../img/osp_header_logo@2x.png) no-repeat;
     background-size: contain;
-    margin-top: -2px;
+    margin-top: 8px;
+    margin-left:12px;
 }
 
 .header a {
-    height: 3.25em;
-    line-height: 3.25em;
-    font-size: 1.5em;
+    height: 3.5em;
+    line-height: 3.8em;
+    font-size: 1.3em;
+    font-weight: 500;
     color: #d6d6d6;
     display: block;
     float: left;
@@ -1155,13 +1212,18 @@ textarea:focus {
     text-shadow: 1px 1px 0px #000;
 }
 
+.main-nav {
+    float: right;
+}
+
 .header .main-nav a {
-    margin: 0 0 0 3em;
+    margin: .25em 2.5em 0 0;
 }
 
 .header .current {
     color: #fff;
     font-weight: 400;
+    padding-bottom: 5px;
 }
 
 .header .current:after {
