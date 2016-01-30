@@ -1,12 +1,11 @@
 $(function(){
-  
+
     // Target your .container, .wrapper, .post, etc.
     $(".slide, .video").fitVids();
-  
-    $(".title-card").on('click', function() {
-      $(window).scrollTo($(".main-content"), 300)
+
+    $(".icon-arrow-down").on('click', function(e) {
+        $(window).scrollTo($(".main-content"), 300)
     })
-  
     /***************************************************************************************************
         NAV
     ***************************************************************************************************/
@@ -40,12 +39,12 @@ $(function(){
         dots: true,                 //  Display dot navigation
         fluid: true                 //  Support responsive design. May break non-responsive designs
     });
-  
+
     $('.slider.slider-auto .dots')
         .wrap('<div class="slider-controls">')
         .before('<i class="slider-control prev icon icon-arrow-left">')
         .after('<i class="slider-control next icon icon-arrow-right">');
-  
+
     $('.slider:not(.slider-auto)').unslider({
         speed: 500,                 //  The speed to animate each slide (in milliseconds)
         delay: false,                //  The delay between slide animations (in milliseconds)
@@ -66,7 +65,7 @@ $(function(){
         });
       $(this).siblings().find('.jump-button:first-child').addClass('active');
     });
-  
+
 
     $('.slider').each(function(){
         var data = $(this).data('unslider');
@@ -83,7 +82,7 @@ $(function(){
     $(document).on("pause:video", function(event, data) {
 
       var iframe = $(data.el).find('iframe');
-      
+
       if (iframe.attr('src').match('vimeo')) {
         var url = iframe.attr('src').split('?')[0];
         iframe[0].contentWindow.postMessage(JSON.stringify({method: 'pause', value: 1}), url);
@@ -92,7 +91,7 @@ $(function(){
         callPlayer(iframe.attr('id'), "pauseVideo");
       }
     })
-  
+
     /***************************************************************************************************
         RESPONSIVE IMAGES
     ***************************************************************************************************/
@@ -157,9 +156,9 @@ preloadImages(imageSrcs);
 
 
 $(window).load(function(){
-    
+
 var initialBg =  $('.title-card').css("background-image");
-    
+
 var firstTime = true;
 var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", "url(img/homepage/bg3.jpg)", "url(img/homepage/bg4.jpg)", "url(img/title-card.jpg)"];
     (function recurse(counter) {
@@ -171,18 +170,18 @@ var arr = [initialBg, "url(img/homepage/bg1.jpg)", "url(img/homepage/bg2.jpg)", 
             $(".title-card").fadeIn("slow");
         } else {
             firstTime = false;
-        }               
+        }
         delete arr[counter];
         arr.push(bgImage);
         setTimeout(function() {
             recurse(counter + 1);
         }, 4500);
-    })(0);      
+    })(0);
 });
 */
 
 $(function() {
-  $("#modal-1").on("change", function() {
+  $(".modal-state").on("change", function() {
     if ($(this).is(":checked")) {
       $("body").addClass("modal-open");
     } else {
@@ -219,3 +218,28 @@ $(function() {
 });
 
 
+$(function() {
+  $(".fancybox-media").fancybox({
+    padding: 0,
+    openEffect	: 'elastic',
+    openSpeed : 150,
+    closeEffect	: 'fade',
+    closeSpeed : 150,
+    closeClick : false,
+    margin : [20, 60, 20, 60],
+    helpers : {
+      media: {},
+      overlay: {
+          locked: false,
+          css: {
+              'background' : 'rgba(0, 0, 0, 0.65)'
+          }
+      },
+      title: {
+          type: 'over'
+      }
+    },
+    type: 'iframe',
+    fitToView : false
+  });
+});
